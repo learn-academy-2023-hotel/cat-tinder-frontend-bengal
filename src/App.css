@@ -17,3 +17,8 @@ display: block;
   font-family: 'Trade Winds', sans-serif;
   bottom: 0;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
