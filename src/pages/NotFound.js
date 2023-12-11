@@ -1,5 +1,5 @@
 import React from 'react'
-import Missing from '/Users/learnacademy/Desktop/cat-tinder-frontend/src/assests/missing.jpg'
+import Missing from '/Users/learnacademy/Desktop/cat-tinder-frontend-bengal/src/assests/missing.jpg'
 
 const NotFound = () => {
 return (

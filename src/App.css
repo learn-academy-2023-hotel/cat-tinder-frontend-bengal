@@ -1,6 +1,7 @@
 .header {
   text-align: center;
   font-family: 'Trade Winds', sans-serif;
+  margin-top: 25px;
 }
 
 .missingcat {  
@@ -16,4 +17,9 @@ display: block;
   text-align: center;
   font-family: 'Trade Winds', sans-serif;
   bottom: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
