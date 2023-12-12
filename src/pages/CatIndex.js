@@ -19,7 +19,7 @@ const Catindex = ({ cats }) => {
             }}
             key={index}
           >
-            <img data-testid="custom-element" alt="big cat profile pic" src={cat.image} />
+            <img alt="big cat profile pic" src={cat.image} />
             <CardBody>
               <CardTitle tag="h5">{cat.name}</CardTitle>
               <CardSubtitle className="mb-2 text-muted" tag="h6">
