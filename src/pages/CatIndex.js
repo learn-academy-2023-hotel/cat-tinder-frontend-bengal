@@ -5,13 +5,13 @@ import {
   CardTitle,
   CardSubtitle,
   CardText,
-  Button,
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
-const Catindex = ({ Cats }) => {
+const Catindex = ({ cats }) => {
   return (
     <div>
-      {Cats?.map((cat, index) => {
+      {cats?.map((cat, index) => {
         return (
           <Card
             style={{
@@ -29,7 +29,7 @@ const Catindex = ({ Cats }) => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card‘s content.
               </CardText>
-              <Button>Button</Button>
+              <NavLink to={`/catshow/${cat.id}`}>Button</NavLink>
             </CardBody>
           </Card>
         );
