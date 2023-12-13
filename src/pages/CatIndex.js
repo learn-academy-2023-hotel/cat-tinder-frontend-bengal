@@ -1,12 +1,7 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-} from "reactstrap";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import { Button } from "reactstrap";
 
 const Catindex = ({ cats }) => {
   return (
@@ -25,11 +20,10 @@ const Catindex = ({ cats }) => {
               <CardSubtitle className="mb-2 text-muted" tag="h6">
                 {cat.age}
               </CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card‘s content.
-              </CardText>
-              <NavLink to={`/catshow/${cat.id}`}>Button</NavLink>
+              <CardText>{cat.enjoy}</CardText>
+              <NavLink to={`/catshow/${cat.id}`}>
+                <Button>View Profile</Button>
+              </NavLink>
             </CardBody>
           </Card>
         );

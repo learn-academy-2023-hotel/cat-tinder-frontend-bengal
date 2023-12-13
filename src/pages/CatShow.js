@@ -1,25 +1,38 @@
-import React from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import React from "react";
+import { NavLink, useParams } from "react-router-dom";
+import { Button } from "reactstrap";
 
-const CatShow = ({ cats }) => {
-    const { id } = useParams()
-    let currentCat = cats?.find((cat) => cat.id === +id)
-return (
-<div>
-    {currentCat && (
+const CatShow = ({ cats, deleteCat }) => {
+  const { id } = useParams();
+  let currentCat = cats?.find((cat) => cat.id === +id);
+
+  const handleSubmit = () => {
+    deleteCat(currentCat.id)
+  }
+  return (
+    <div>
+      {currentCat && (
         <>
-            <img
+          <img
             alt={`profile of a cat  named ${currentCat.name}`}
             src={currentCat.image}
-            />
-            {currentCat.enjoy}
-            {currentCat.age}
-
-        <NavLink to={`/catedit/${currentCat.id}`} className="nav-link"> Edit Purrrfile</NavLink>
+          />
+          {currentCat.enjoy}
+          {currentCat.age}
+          <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
+           <Button> {" "}
+            Edit Purrrfile
+            </Button>
+          </NavLink>
+          <NavLink to={"/catindex/"} className="nav-link">
+            <Button onClick={handleSubmit}>{" "}
+            Delete Profile
+            </Button>
+          </NavLink>
         </>
-    )}
-</div>
-)
-}
+      )}
+    </div>
+  );
+};
 
-export default CatShow
+export default CatShow;

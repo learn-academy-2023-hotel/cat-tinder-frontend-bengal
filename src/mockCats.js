@@ -3,7 +3,7 @@ const mockCats = [
         id: 1,
         name: 'Blackwell',
         age: 4,
-        enjoy: 'long walks on the beach',
+        enjoy: 'brisk walks on the beach',
         image: "https://pbs.twimg.com/media/EngwcYLVoAEhlvF?format=jpg&name=900x900"
     },
     {
