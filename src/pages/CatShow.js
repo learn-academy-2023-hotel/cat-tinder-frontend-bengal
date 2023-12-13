@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 
 const CatShow = ({ cats }) => {
     const { id } = useParams()
@@ -14,6 +14,8 @@ return (
             />
             {currentCat.enjoy}
             {currentCat.age}
+
+        <NavLink to={`/catedit/${currentCat.id}`} className="nav-link"> Edit Purrrfile</NavLink>
         </>
     )}
 </div>

@@ -41,7 +41,7 @@ const CatNew = ({ createCat }) => {
         </FormGroup>
         <FormGroup>
           <Label for="enjoy">Enjoy</Label>
-          <Input id="enjoy" name="enjoy" placeholder="enjoy..." type="email" onChange={handleChange}
+          <Input id="enjoy" name="enjoy" placeholder="enjoy..." type="text" onChange={handleChange}
             value={newCat.enjoy}/>
         </FormGroup>
         <FormGroup>
