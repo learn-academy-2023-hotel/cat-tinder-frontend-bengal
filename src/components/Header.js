@@ -1,31 +1,34 @@
 import React from "react";
 import { Nav, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import scratch from '../assests/scratch2.svg'
 
 const Header = () => {
   return (
     <>
-      <div className="header">WildCat Tinder</div>
-      <div>
-        <Nav pills className="navbar">
+      <div className="header">
+        WildCat Tinder
+        </div>
+      <div className="nav-container">
+        <div className="navbar">
+        <Nav pills className="nav-center">
           <NavItem>
-            <NavLink active to="/">
-              <img
-                src="https://images.unsplash.com/photo-1627608221028-63314f261558?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Big Cat Tinder logo with outline of cat"
-                height={50}
-                width={50}
-              />
+            <NavLink to="/" className="nav-link">
               Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/catindex">Meet the cats</NavLink>
+            <NavLink to="/catindex" className="nav-link">
+              Meet the cats
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="catnew">New account</NavLink>
+            <NavLink to="catnew" className="nav-link">
+              New account
+            </NavLink>
           </NavItem>
         </Nav>
+        </div>
       </div>
     </>
   );
