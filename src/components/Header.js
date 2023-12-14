@@ -1,16 +1,25 @@
 import React from "react";
 import { Nav, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import scratch from '../assests/scratch2.svg'
 
 const Header = () => {
   return (
     <>
-      <div className="header">WildCat Tinder</div>
+      <div className="header">
+        WildCat Tinder
+            <img
+              alt="logo"
+              src={scratch}
+              width={"180"}
+              height={"180"}
+              />
+        </div>
       <div className="nav-container">
         <div className="navbar">
         <Nav pills className="nav-center">
           <NavItem>
-            <NavLink active to="/" className="nav-link">
+            <NavLink to="/" className="nav-link">
               Home
             </NavLink>
           </NavItem>

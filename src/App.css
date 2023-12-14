@@ -23,7 +23,11 @@ body {
 
 .nav-link {
   margin: right 75px;
-  color: orange !important;
+  color: orangered !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #735729 !important;
 }
 
 .header {
@@ -76,3 +80,18 @@ display: block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.view-button {
+  background-color: #EFC862 !important;
+  color: orangered;
+  font-family: 'Trade Winds', sans-serif;
+
+}
+
+.card {
+  background-color: #52A249 !important;
+}
+
+/* .card-wrapper {
+  opacity: .8;
+} */
