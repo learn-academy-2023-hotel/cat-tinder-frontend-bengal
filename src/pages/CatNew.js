@@ -75,7 +75,7 @@ const CatNew = ({ createCat }) => {
                 />
               </FormGroup>
             </Form>
-            <Button onClick={handleSubmit} name="submit">
+            <Button className="view-button" style={{ fontFamily:'Trade Winds, sans-serif'}} onClick={handleSubmit} name="submit">
               Submit
             </Button>
           </Col>
