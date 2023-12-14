@@ -8,12 +8,6 @@ const Header = () => {
     <>
       <div className="header">
         WildCat Tinder
-            <img
-              alt="logo"
-              src={scratch}
-              width={"180"}
-              height={"180"}
-              />
         </div>
       <div className="nav-container">
         <div className="navbar">
