@@ -5,14 +5,6 @@ import CatIndex from "../pages/CatIndex";
 import mockCats from "/Users/learnacademy/Desktop/cat-tinder-frontend/src/mockCats.js";
 
 describe("<CatIndex />", () => {
-  // const renderCatIndex = () => {
-  // render(
-  //   <BrowserRouter>
-  //     <CatIndex mockCats={mockCats} />
-  //   </BrowserRouter>
-  // );
-
-  // }
   it("renders without crashing", () => {
     render(
       <BrowserRouter>
