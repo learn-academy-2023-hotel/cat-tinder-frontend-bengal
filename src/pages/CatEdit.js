@@ -8,10 +8,10 @@ const CatEdit = ({cats, updateCat}) => {
     let currentCat=cats?.find((cat)=> cat.id === +id)
 
     const [editCat, setEditCat]=useState({
-        name: currentCat.name,
-        age: currentCat.age,
-        enjoy: currentCat.enjoy,
-        image: currentCat.image
+        name: currentCat?.name,
+        age: currentCat?.age,
+        enjoy: currentCat?.enjoy,
+        image: currentCat?.image
     })
     const handleChange = (e) => {
         setEditCat({...editCat, [e.target.name]: e.target.value})

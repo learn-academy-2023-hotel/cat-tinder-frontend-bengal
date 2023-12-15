@@ -7,8 +7,8 @@ const CatShow = ({ cats, deleteCat }) => {
   let currentCat = cats?.find((cat) => cat.id === +id);
 
   const handleSubmit = () => {
-    deleteCat(currentCat.id)
-  }
+    deleteCat(currentCat.id);
+  };
   return (
     <div>
       {currentCat && (
@@ -16,19 +16,27 @@ const CatShow = ({ cats, deleteCat }) => {
           <img
             alt={`profile of a cat  named ${currentCat.name}`}
             src={currentCat.image}
+            className="showcat"
           />
-          {currentCat.enjoy}
-          {currentCat.age}
-          <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
-           <Button> {" "}
-            Edit Purrrfile
-            </Button>
-          </NavLink>
-          <NavLink to={"/catindex/"} className="nav-link">
-            <Button onClick={handleSubmit}>{" "}
-            Delete Profile
-            </Button>
-          </NavLink>
+          <div className="show-text">
+          Enjoys: {currentCat.enjoy}
+          </div>
+          <div className="show-text">
+          Age: {currentCat.age}
+          </div>
+          <div className="show-button">
+            <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
+              <Button className="view-button"> Edit Purrrfile</Button>
+            </NavLink>
+          </div>
+          <div className="show-button">
+            <NavLink to={"/catindex/"} className="nav-link">
+              <Button onClick={handleSubmit} className="view-button">
+                {" "}
+                Delete Profile
+              </Button>
+            </NavLink>
+          </div>
         </>
       )}
     </div>

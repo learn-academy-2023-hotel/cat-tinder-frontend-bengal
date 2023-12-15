@@ -14,11 +14,11 @@ body {
 }
 
 .nav-center {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  background-color: #EFC862;
+  background-color: #efc862;
   color: yellow !important;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .nav-link {
@@ -32,24 +32,24 @@ body {
 
 .header {
   text-align: center;
-  font-family: 'Trade Winds', sans-serif;
+  font-family: "Trade Winds", sans-serif;
   font-size: 5rem;
   margin-top: 25px;
   color: orangered;
 }
 
-.missingcat {  
-width: 2in;
-height: 2in;
-margin: auto;
-margin-left: auto;
-margin-right: auto;
-display: block;
-} 
+.missingcat {
+  width: 2in;
+  height: 2in;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 .footer {
   text-align: center;
-  font-family: 'Trade Winds', sans-serif;
+  font-family: "Trade Winds", sans-serif;
   bottom: 0;
   color: orangered;
   font-size: 18px;
@@ -58,15 +58,15 @@ display: block;
 
 .navbar {
   text-decoration: none;
-  font-family: 'Trade Winds', sans-serif;
+  font-family: "Trade Winds", sans-serif;
   color: yellow;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 5px 10px 5px 10px;
 }
 
 .home-cat {
-  background-image: url('https://images.unsplash.com/photo-1623645481161-0d8160281cbf?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url("https://images.unsplash.com/photo-1623645481161-0d8160281cbf?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
@@ -75,29 +75,28 @@ display: block;
 }
 
 .new-form {
-  font-family: 'Trade Winds', sans-serif;
+  font-family: "Trade Winds", sans-serif;
   color: orangered;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .view-button {
-  background-color: #EFC862 !important;
+  background-color: #efc862 !important;
   color: orangered;
-  font-family: 'Trade Winds', sans-serif;
-
+  font-family: "Trade Winds", sans-serif;
 }
 
 .card {
-  background-color: #52A249 !important;
+  background-color: #52a249 !important;
 }
 
-/* .card-wrapper {
-  opacity: .8;
-} */
-
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -109,9 +108,58 @@ display: block;
 }
 
 .bounce {
-  animation: bounce 1s ease-in-out infinite; /* Adjust the duration as needed */
+  animation: bounce 2s ease-in-out infinite; /* Adjust the duration as needed */
 }
 
 .playing {
   animation-play-state: paused;
+}
+
+.showcat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border: 1px solid orangered;
+  width: 700px;
+  height: 550px;
+}
+.show-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  font-family: "Trade Winds", sans-serif;
+}
+
+.show-text {
+  background-color: #d3c7bb;
+  color: #005222;
+  text-align: center;
+  font-family: "Trade Winds", sans-serif;
+  font-size: 1rem;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.index-img {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  opacity: 1;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  color: orangered;
+  margin: auto;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: 25%;
+  background-size: 50% 50%;
 }
