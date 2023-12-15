@@ -61,7 +61,6 @@ const App = () => {
       .then(() => readCat())
       .catch((errors) => console.log("delete errors:", errors));
   };
-  
 
   return (
     <>
@@ -74,7 +73,10 @@ const App = () => {
         />
         <Route path="/catindex" element={<CatIndex cats={cats} />} />
         <Route path="/catnew" element={<CatNew createCat={createCat} />} />
-        <Route path="/catshow/:id" element={<CatShow cats={cats} deleteCat={deleteCat} />} />
+        <Route
+          path="/catshow/:id"
+          element={<CatShow cats={cats} deleteCat={deleteCat} />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

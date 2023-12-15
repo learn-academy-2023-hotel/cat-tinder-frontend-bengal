@@ -9,14 +9,14 @@ describe("<CatNew />", () => {
         <CatNew />
       </BrowserRouter>
     );
-};
-it("renders without crashing", () => {
+  };
+  it("renders without crashing", () => {
     renderCatNew();
     screen.logTestingPlaygroundURL();
   });
   it("renders name input in form", () => {
-    renderCatNew()
-    const name = screen.getByRole('textbox', { name: /name/i })
-    expect(name).toBeInTheDocument()
-  })
+    renderCatNew();
+    const name = screen.getByRole("textbox", { name: /name/i });
+    expect(name).toBeInTheDocument();
+  });
 });
