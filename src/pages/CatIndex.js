@@ -16,19 +16,21 @@ const Catindex = ({ cats }) => {
       {cats?.map((cat, index) => {
         return (
           <div>
-            <Card className="text-center"
+            <Card
+              className="text-center"
               style={{
                 width: "18rem",
                 height: "100%",
-                maxHeight: "100%",  
+                maxHeight: "100%",
                 margin: "50px",
                 marginBottom: "100px",
                 opacity: ".8",
               }}
               key={index}
             >
-              <CardBody >
-                <img className="index-img"
+              <CardBody>
+                <img
+                  className="index-img"
                   alt="big cat profile pic"
                   src={cat.image}
                   style={{
@@ -42,14 +44,14 @@ const Catindex = ({ cats }) => {
                 </CardSubtitle>
                 <CardText>{cat.enjoy}</CardText>
               </CardBody>
-            <NavLink to={`/catshow/${cat.id}`}>
-              <Button
-                className="view-button"
-                style={{ fontFamily: "Trade Winds, sans-serif" }}
-              >
-                View Profile
-              </Button>
-            </NavLink>
+              <NavLink to={`/catshow/${cat.id}`}>
+                <Button
+                  className="view-button"
+                  style={{ fontFamily: "Trade Winds, sans-serif" }}
+                >
+                  View Profile
+                </Button>
+              </NavLink>
             </Card>
           </div>
         );

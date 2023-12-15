@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import useSound from 'use-sound';
-import Noise from '../assests/ART OF NOISE_  MOMENTS IN LOVE (THE ORIGINAL).mp3';
-
+import React, { useState } from "react";
+import useSound from "use-sound";
+import Noise from "../assests/Love_Song.mp3";
 
 const PlaySound = () => {
   const [playSound, { stop }] = useSound(Noise);
@@ -10,13 +9,13 @@ const PlaySound = () => {
   return (
     <div className="vibes">
       <button
-        className={`pulse-button ${isHovered ? 'pulse' : ''}`}
+        className={`pulse-button ${isHovered ? "pulse" : ""}`}
         style={{
-          outline: 'none',
-          background: 'transparent',
-          border: 'none',
+          outline: "none",
+          background: "transparent",
+          border: "none",
           padding: 0,
-          cursor: 'pointer',
+          cursor: "pointer",
         }}
         onMouseEnter={() => {
           playSound();

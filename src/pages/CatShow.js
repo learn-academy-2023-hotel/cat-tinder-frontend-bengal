@@ -18,12 +18,8 @@ const CatShow = ({ cats, deleteCat }) => {
             src={currentCat.image}
             className="showcat"
           />
-          <div className="show-text">
-          Enjoys: {currentCat.enjoy}
-          </div>
-          <div className="show-text">
-          Age: {currentCat.age}
-          </div>
+          <div className="show-text">Enjoys: {currentCat.enjoy}</div>
+          <div className="show-text">Age: {currentCat.age}</div>
           <div className="show-button">
             <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
               <Button className="view-button"> Edit Purrrfile</Button>

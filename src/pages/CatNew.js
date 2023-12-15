@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Form, FormGroup, Label, Input, Button, Container, Row, Col } from "reactstrap";
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 import { useNavigate } from "react-router-dom";
 
 const CatNew = ({ createCat }) => {
@@ -75,7 +84,12 @@ const CatNew = ({ createCat }) => {
                 />
               </FormGroup>
             </Form>
-            <Button className="view-button" style={{ fontFamily:'Trade Winds, sans-serif'}} onClick={handleSubmit} name="submit">
+            <Button
+              className="view-button"
+              style={{ fontFamily: "Trade Winds, sans-serif" }}
+              onClick={handleSubmit}
+              name="submit"
+            >
               Submit
             </Button>
           </Col>

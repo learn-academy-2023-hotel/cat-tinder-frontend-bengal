@@ -3,7 +3,7 @@ import { Nav, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import useSound from "use-sound";
 import scratch from "../assests/scratch2.png";
-import Noise from "../assests/ART OF NOISE_  MOMENTS IN LOVE (THE ORIGINAL).mp3";
+import Noise from "../assests/Love_Song.mp3";
 
 const Header = () => {
   const [play, { stop }] = useSound(Noise, { volume: 1 });
@@ -32,13 +32,16 @@ const Header = () => {
             animationDuration: "0.5s",
           }}
         >
-          <img
-            alt="logo"
-            src={scratch}
-            width={"180"}
-            height={"180"}
-            style={{ cursor: "pointer" }}
-          />
+          <div className="hover-text">
+            <img
+              alt="logo"
+              src={scratch}
+              width={"180"}
+              height={"180"}
+              style={{ cursor: "pointer" }}
+            />
+            <p className="text">Click me!</p>
+          </div>
         </button>
       </div>
       <div className="nav-container">

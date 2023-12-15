@@ -1,15 +1,12 @@
-import React from 'react'
-import Missing from '../assests/missing.jpg'
+import React from "react";
+import Missing from "../assests/missing.jpg";
 
 const NotFound = () => {
-return (
-<div>
-        <img 
-        src={Missing} 
-        alt='Missing Cat'
-        className="missingcat"  />
-</div>
-)
-}
+  return (
+    <div>
+      <img src={Missing} alt="Missing Cat" className="missingcat" />
+    </div>
+  );
+};
 
-export default NotFound
+export default NotFound;
